@@ -9,8 +9,6 @@ const PinCard = (props) => {
         src={props.image} 
         alt="No cargo imagen"/>
     </div>
-
-
     );
 };
 
@@ -19,6 +17,7 @@ const _stylesPinCard = {
         margin: '15px 10px',
         padding: 0,
         borderRadius: '15px',
+        cursor: 'pointer',
     },
     small:{
         gridRowEnd: 'span 26',

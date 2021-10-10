@@ -13,7 +13,9 @@ const PinterestHeader = () => {
                 <IoLogoPinterest 
                     className = "logo-icon" style={_stylesHeader.left_header_img}
                 />
-                <h3>Home</h3>
+                <div style={_stylesHeader.header_home}>
+                    <h3>Home</h3>
+                </div>
                 <h3>Today</h3>
                 <h3>Following</h3>
             </div>
@@ -25,12 +27,15 @@ const PinterestHeader = () => {
             <HiBell style={_stylesHeader.right_header_icons}/>
             <AiFillMessage style={_stylesHeader.right_header_icons} />
             <CgProfile style={_stylesHeader.right_header_icons} />
+            
             </div>
         </div>
 
     </div>
     );
 };
+
+
 const _stylesHeader = {
     pin_header: {
     backgroundColor: '#fff',
@@ -91,5 +96,58 @@ const _stylesHeader = {
         cursor: 'pointer',
         color: '#767676',
     },
+    
+    header_home:{
+        width: '50px',
+        height: '50px',
+        backgroundColor: '#333333',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderTopRightRadius:'20px',
+        borderBottomRightRadius:'20px',
+        borderTopLeftRadius:'20px',
+        borderBottomLeftRadius:'20px',
+        color: 'white',
+        marginRight: '10px',
+        marginLeft: '10px',
+        padding: '0 8px',
+    },
 }
+
+// var Link = React.createClass({
+//     getInitialState: function(){
+//         return {hover: false, active: false, focus: false}
+//       },
+    
+//       toggleHover: function(){
+//         this.setState({hover: !this.state.hover})
+//       },
+    
+//       toggleActive: function(){
+//         this.setState({active: !this.state.active})
+//       },
+    
+//       toggleFocus: function(){
+//         this.setState({focus: !this.state.focus})
+//       },
+    
+  
+//       render: function() {
+//         var linkStyle;
+//         if (this.state.hover) {
+//           linkStyle = {backgroundColor: 'red'}
+//         } else if (this.state.active) {
+//           linkStyle = {backgroundColor: 'blue'}
+//         } else if (this.state.focus) {
+//           linkStyle = {backgroundColor: 'purple'}
+//         } 
+//       }
+// });
+
+
+
+
+
+     
 export default PinterestHeader;
