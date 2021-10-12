@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import PinterestLayout from './components/PinterestLayout';
+import PinterestHeader from './components/PinterestHeader';
+import PinterestHeaderResponsive from './components/PinterestHeaderResponsive';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App = () => {
+  if(window.innerWidth > 375){
+    return (
+      <div>
+        <PinterestHeader />
+        <PinterestLayout />  
+      </div>
+    );
+  }else{
+    return (
+      <div>
+        <PinterestHeaderResponsive />  
+        <PinterestLayout />  
+      </div>
+    );
+  }
+};
 
 export default App;
