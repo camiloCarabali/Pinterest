@@ -35,3 +35,7 @@ const _stylesPinCard = {
 export default PinCard;
 
 
+<<<<<<< HEAD
+=======
+//<img src="https://picsum.photos/300/150" />
+>>>>>>> ff77fbf7fa85ba12e59b7e66b7c70bb22c7e597d

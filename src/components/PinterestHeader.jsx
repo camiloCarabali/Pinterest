@@ -10,6 +10,7 @@ const PinterestHeader = () => {
     <div style={_stylesHeader.pin_header}>
         <div style={_stylesHeader.header}>
             <div style={_stylesHeader.left_header}>
+<<<<<<< HEAD
                 <div class = "logo-icon" >
                     <IoLogoPinterest 
                     style={_stylesHeader.left_header_img}
@@ -38,6 +39,25 @@ const PinterestHeader = () => {
             <div class = "logo-icon" >
                 <CgProfile style={_stylesHeader.right_header_icons} />
             </div>
+=======
+                <IoLogoPinterest 
+                    className = "logo-icon" style={_stylesHeader.left_header_img}
+                />
+                <div style={_stylesHeader.header_home}>
+                    <h3>Home</h3>
+                </div>
+                <h3>Today</h3>
+                <h3>Following</h3>
+            </div>
+            <div style={_stylesHeader.middle_header}>
+            <BiSearchAlt2 style={_stylesHeader.right_header_icons} />
+            <input type="text" style={_stylesHeader.middle_header_search} placeholder="Buscar..."/>
+            </div>
+            <div style={_stylesHeader.right_header}>
+            <HiBell style={_stylesHeader.right_header_icons}/>
+            <AiFillMessage style={_stylesHeader.right_header_icons} />
+            <CgProfile style={_stylesHeader.right_header_icons} />
+>>>>>>> ff77fbf7fa85ba12e59b7e66b7c70bb22c7e597d
             
             </div>
         </div>
@@ -91,7 +111,10 @@ const _stylesHeader = {
         padding: '15px 5px',
         borderRadius: '33px',
         outline: 'none',
+<<<<<<< HEAD
         
+=======
+>>>>>>> ff77fbf7fa85ba12e59b7e66b7c70bb22c7e597d
 
     },
     right_header:{
@@ -107,11 +130,14 @@ const _stylesHeader = {
         borderRadius: '33px',
         cursor: 'pointer',
         color: '#767676',
+<<<<<<< HEAD
         '&:hover': {
             color: 'red !important',
             width: '45px',
         height: '45px',
         },
+=======
+>>>>>>> ff77fbf7fa85ba12e59b7e66b7c70bb22c7e597d
     },
     
     header_home:{
@@ -132,4 +158,42 @@ const _stylesHeader = {
     },
 }
 
+<<<<<<< HEAD
+=======
+// var Link = React.createClass({
+//     getInitialState: function(){
+//         return {hover: false, active: false, focus: false}
+//       },
+    
+//       toggleHover: function(){
+//         this.setState({hover: !this.state.hover})
+//       },
+    
+//       toggleActive: function(){
+//         this.setState({active: !this.state.active})
+//       },
+    
+//       toggleFocus: function(){
+//         this.setState({focus: !this.state.focus})
+//       },
+    
+  
+//       render: function() {
+//         var linkStyle;
+//         if (this.state.hover) {
+//           linkStyle = {backgroundColor: 'red'}
+//         } else if (this.state.active) {
+//           linkStyle = {backgroundColor: 'blue'}
+//         } else if (this.state.focus) {
+//           linkStyle = {backgroundColor: 'purple'}
+//         } 
+//       }
+// });
+
+
+
+
+
+     
+>>>>>>> ff77fbf7fa85ba12e59b7e66b7c70bb22c7e597d
 export default PinterestHeader;
