@@ -9,16 +9,10 @@ window.onscroll = () => {
     const fakeF = document.querySelector('#footer');
       if (window.pageYOffset <= 150) {
         fakeF.style.top= '700px'
-<<<<<<< HEAD
         fakeF.style.opacity = '1';
       } else {
         fakeF.style.top = '880px'
         fakeF.style.opacity = '0';
-=======
-      } else {
-        window.pageYOffset = 0;
-        fakeF.style.top = '880px'
->>>>>>> ff77fbf7fa85ba12e59b7e66b7c70bb22c7e597d
       }
   };
 
@@ -69,30 +63,5 @@ const _stylesFooter= {
     },
 }
 
-<<<<<<< HEAD
-
-=======
-/*
-window.onscroll = () => {
-  const fakeH = document.querySelector('#searchBar');
-  const fakeF = document.querySelector('#footer');
-
-  if (window.innerWidth >= 375) {
-    if (window.pageYOffset >= 150) {
-      fakeH.style.top = '-75px';
-      fakeH.style.opacity = '0';
-      fakeF.style.top = '700px';
-      fakeF.style.opacity = '1';
-    } else {
-      fakeH.style.top = '0px';
-      fakeH.style.opacity = '1';
-      fakeF.style.top = '880px';
-      fakeF.style.opacity = '0';
-    }
-  }
-};
-
-*/
->>>>>>> ff77fbf7fa85ba12e59b7e66b7c70bb22c7e597d
 
 export default PinterestFooter;
